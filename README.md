@@ -130,4 +130,10 @@ This project provided hands-on experience with:
 
 ---
 
-                                                       **Made with ❤️ for Cloud Engineering**
+<div align="center">
+
+**Made with ❤️ for Cloud Engineering**
+
+</div>
+
+                                                       
