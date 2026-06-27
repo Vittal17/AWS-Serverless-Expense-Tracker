@@ -52,7 +52,6 @@ The project demonstrates practical implementation of serverless computing, RESTf
 * 🌍 Global content delivery using CloudFront CDN
 
 ---
----
 
 # ⚙️ How It Works
 
