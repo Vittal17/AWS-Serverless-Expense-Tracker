@@ -128,4 +128,6 @@ This project provided hands-on experience with:
 - 📊 Integrating frontend applications with cloud-native backend services
 - 🚀 Understanding scalable, event-driven cloud architectures used in production
 
-- **Made with ❤️ for Cloud Engineering**
+---
+
+                                                       **Made with ❤️ for Cloud Engineering**
