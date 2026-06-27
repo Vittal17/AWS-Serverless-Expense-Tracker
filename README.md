@@ -127,3 +127,5 @@ This project provided hands-on experience with:
 - 🔐 Configuring IAM permissions and secure cloud access
 - 📊 Integrating frontend applications with cloud-native backend services
 - 🚀 Understanding scalable, event-driven cloud architectures used in production
+
+- **Made with ❤️ for Cloud Engineering**
