@@ -52,3 +52,79 @@ The project demonstrates practical implementation of serverless computing, RESTf
 * 🌍 Global content delivery using CloudFront CDN
 
 ---
+---
+
+# ⚙️ How It Works
+
+The AWS Serverless Expense Tracker follows an event-driven, serverless architecture where every user interaction is processed on demand without the need to provision or manage servers.
+
+When a user opens the application, the static frontend (HTML, CSS, and JavaScript) is delivered from **Amazon S3** through **Amazon CloudFront**, ensuring fast global access over HTTPS. The frontend communicates with backend services by making secure REST API requests to **Amazon API Gateway**.
+
+Each API request triggers an **AWS Lambda** function responsible for validating input, executing the required business logic, and interacting with **Amazon DynamoDB** to create, retrieve, or delete expense records. The processed response is then returned to the frontend, where the user interface updates instantly without requiring a page refresh.
+
+This architecture enables the application to automatically scale based on demand while minimizing operational overhead and infrastructure costs.
+
+---
+
+# 🔄 End-to-End Request Flow
+
+```text
+👤 User
+      │
+      ▼
+🌍 Amazon CloudFront (HTTPS CDN)
+      │
+      ▼
+📦 Amazon S3 (Static Website Hosting)
+      │
+      ▼
+⚡ Amazon API Gateway (REST APIs)
+      │
+      ▼
+🧠 AWS Lambda (Business Logic)
+      │
+      ▼
+🗄️ Amazon DynamoDB (Expense Storage)
+      │
+      ▼
+📤 JSON Response
+      │
+      ▼
+💻 Updated Dashboard
+```
+
+---
+
+# 🎯 Why Serverless?
+
+✅ **No Server Management**  
+Focus entirely on application development while AWS manages the underlying infrastructure.
+
+⚡ **Automatic Scaling**  
+Resources automatically scale up or down based on incoming traffic.
+
+💰 **Pay Only for Usage**  
+Lambda functions are billed only when they execute, making the application highly cost-effective.
+
+🔒 **Secure by Design**  
+CloudFront provides HTTPS delivery, while API Gateway securely exposes backend endpoints.
+
+🚀 **High Availability**  
+AWS managed services ensure fault tolerance and high availability with minimal operational effort.
+
+📈 **Production-Ready Architecture**  
+The project demonstrates real-world cloud engineering concepts including RESTful APIs, event-driven computing, serverless architecture, CDN distribution, and NoSQL database design.
+
+---
+
+# 💡 Learning Outcomes
+
+This project provided hands-on experience with:
+
+- ☁️ Designing and deploying serverless applications on AWS
+- ⚡ Building RESTful APIs using Amazon API Gateway and AWS Lambda
+- 🗄️ Working with NoSQL databases using Amazon DynamoDB
+- 🌍 Hosting static web applications with Amazon S3 and CloudFront
+- 🔐 Configuring IAM permissions and secure cloud access
+- 📊 Integrating frontend applications with cloud-native backend services
+- 🚀 Understanding scalable, event-driven cloud architectures used in production
